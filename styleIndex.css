@@ -1,0 +1,403 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    filter: drop-shadow(2px 3px 5px rgb(148, 148, 148));    
+}
+
+.nav {
+    display: flex;
+    align-items: flex-end;
+}
+
+.nav-links {
+   margin-right: 20px;
+   color: black;
+   text-decoration:none;
+   padding-bottom: 5px;
+   border-bottom: solid 3px rgba(128, 128, 128, 0.0);
+   
+}
+.nav-links:hover {
+    cursor: pointer;
+    border-bottom: solid 3px;
+    color: rgb(0,128,0);
+}
+
+.nav-burger {
+    display: none;
+}
+
+input {
+    outline: none;
+}
+
+/*------------------------------------------------Welcome Recepie--------------------------------------*/
+
+#lasagna {
+    width: 80%;
+    max-width: 600px;
+    height: 100%;
+    border-radius: 16px;
+    margin-left: 300px;    
+}
+
+#lasagna-headline {
+    margin-block-start: 0;
+    padding-top: 0;
+}
+
+#section-presented-recipe {
+    display: flex;
+    justify-content: center;
+    gap:40px;
+    padding: 50px 0 50px 0;
+}
+
+#recipe-description {
+    display: flex;
+    flex-direction: column;
+    max-width: 428px;
+    margin-right: 100px;
+}
+
+#recipe-text {
+    font-size: 24px;
+    font-weight: 300;
+    margin-block-end: 1em;    
+}
+
+#presented-recipe-container {
+    display: flex ;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 700px;
+}
+
+#presented-recipe-container a {
+    border-radius: 10px;
+}
+
+.calc-button {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 10px 40px 10px 40px;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: arial;
+    text-decoration: none;
+    border-radius: 0 10px 10px 0;
+}
+  
+.calc-button:hover {
+    cursor: pointer;
+    background-color: rgb(30, 200, 0);
+}
+
+/*------------------------------------------------Taste of something new--------------------------------------*/
+
+.what-about{
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+}
+
+.suggestion-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.suggestion-container p{
+    margin-block-start: 0;
+    font-weight: bold;
+}
+
+.suggestion-container img {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.suggestion-container a {
+   text-decoration: none;
+   color: black;
+}
+
+h2 {
+    padding-top: 20px;
+    margin-block-start: 0;
+    font-size: 32px;
+}
+
+/*------------------------------------------------Wok vs. Pan--------------------------------------*/
+
+#section-pan-vs-wok {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#wok {
+    height: 240px;
+    width: 240px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+#wok-container {
+    display: flex;
+    width: 100%;;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#wok-text {
+    width: 700px
+}
+
+/*------------------------------------------------Footer--------------------------------------*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(64,59,59);
+    align-items: center;
+    margin-top: 40px;
+}
+
+.footerlink {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.footerlink:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(0,128,0);  
+}
+
+.copy {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.footerlogo {
+    height: 100px;
+    width: auto;
+    padding: 20px;
+    filter: invert(1);  
+}
+
+.footerplaceholder {
+    display: flex;
+}
+
+@media (max-width: 1320px) {
+    #section-presented-recipe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #lasagna {
+        margin: 0;
+    }
+
+    #recipe-description {
+        margin: 0;
+        max-width:100%;
+    }
+
+    #presented-recipe-container {
+        align-items: center;
+    }
+}
+
+@media (max-width: 990px) {
+    #wok-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #wok {
+        width: 80%;
+    }
+}
+
+@media (max-width: 960px) {
+
+    header img{
+        width: 300px
+    }
+}
+
+@media (max-width: 850px ) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #recipe-description {
+        max-width:60%;
+        text-align: center;
+    }
+
+    #presented-recipe-container {
+        height: auto;
+        width: auto;
+        
+    }
+
+    #recipe-text {
+        font-size: 18px;
+    }
+
+    #section-presented-recipe {
+        padding: 50px 0 0 0 ;
+        margin-bottom: 20px;
+    }
+
+    .suggestion-container {
+        flex-direction: column;
+    }
+
+    #wok-text {
+        font-size: 18px;
+        width: 80%;
+    }
+
+    #section-pan-vs-wok {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 660px) {
+    #presented-recipe-container {
+        width: 80%;
+        height: auto;
+    }
+
+    #recipe-description {
+        max-width: 100% ;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-burger-links {
+        display: flex !important;
+        position: absolute;
+        top: 80px;
+        right: 0px;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 5px;
+    }
+
+    .nav-links {
+        margin: 5px 5px 5px 5px;
+    }
+
+    #nav-burger-links {
+        display: none;
+    }
+
+    .nav-burger {
+        display: block;
+        border-radius: 3px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav-burger img {
+        display: block;
+        height: 30px;
+        width: auto;
+    }
+
+    .nav-burger img:hover {
+        cursor: pointer;
+        background-color: rgb(0,128,0);
+    }    
+
+    .footerlogo {
+        height: 80px;
+        filter: invert(1);
+    }
+
+    h2, h1, h3 {
+        text-align: center;
+    }
+}
+
+@media (max-width:538px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .footer-right {
+        font-size: 10px;        
+    }    
+}
+
+
+@media (max-width: 460px) {
+    body {
+        font-size: 14px;
+    }
+
+    #wok-text {
+        font-size: 14px;;
+    }
+
+    p {
+        font-size: 18px;
+    }
+  
+    .calc-button {
+        font-size: 14px;
+    }
+
+    #recipe-text {
+        font-size: 14px;
+        }
+
+    h2 {
+        font-size: 24px;
+    }
+}

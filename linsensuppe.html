@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linsensuppe</title>
+  <link rel="stylesheet" href="styleRecipe.css">
+  <link rel="shortcut icon" href="./img/logo_small.png" type="image/x-icon">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+    <script src="script.js"></script>
+</head>
+
+<body onload="calcPortionLinse()">
+
+
+
+
+  <header>
+    <img src="./img/logo.png" alt="logo">
+    <nav class="nav">
+      <a class="nav-links" href="./index.html">Start</a>
+        <a class="nav-links" href="./lasagnarecipe.html">Rezept des Tages</a>
+        <a class="nav-links" href="./contact.html">Kontakt</a>
+        <a class="nav-links" href="./impressum.html">Impressum</a>
+    </nav>
+    <nav class="nav-burger">
+      <img onclick="showMenuLinks()" src="./img/icons/icons8-menü-30.png" alt="Burgermenü">
+      <div id="nav-burger-links">
+          <a class="nav-links" href="./index.html">Start</a>
+          <a class="nav-links" href="./lasagnarecipe.html">Rezept des Tages</a>
+          <a class="nav-links" href="./contact.html">Kontakt</a>
+          <a class="nav-links" href="./impressum.html">Impressum</a>
+      </div>
+  </nav>
+
+
+  </header>
+
+  <!-- Header Ende  -->
+
+
+  <div id="Mainpage-content">
+
+
+    <section id="title-section">
+      <h1>Linsensuppe</h1>
+      <img id="title-image" src="./img/linsensuppe.jpg" alt="Lasagne" />
+      <article id="properties">
+
+        <div id="time-container">
+          <img class="property-icons" src="./img/icons/clock-regular.svg" alt="" />
+          <span id="total-time">15 Min.</span>
+        </div>
+
+        <div id="difficulty-container">
+          <img class="property-icons" src="./img/icons/brain-solid.svg" alt="" />
+          <span id="difficulty">simpel</span>
+        </div>
+
+        <div id="posting-date-container">
+          <img class="property-icons" src="./img/icons/calendar-alt-regular.svg" alt="" />
+          <span id="posting-date"> 15.06.2023</span>
+        </div>
+      </article>
+    </section>
+
+
+    <section id="ingredients">
+      <article id="portion-calc">
+        <span>Zutaten für</span>
+        <input id="portion-input" type="number" value="1" placeholder="Anzahl" min="1" max="9" />
+        <a onclick="calcPortionLinse()" class="calc-button">Portionen</a>
+      </article>
+
+
+
+      <table id="table">
+      
+      </table>
+
+
+
+</section>
+    <section id="instruction-section">
+      <h2>Zubereitung</h2>
+      <div id="instruction-time-master-container">
+
+        <div class="instruction-time-container">
+          <img class="property-icons" src="./img/icons/clock-regular.svg" alt="Uhr-Icon" />
+          <span id="instruction-time">Gesamtzeit ca. 15 Minuten</span><br>
+          </span>
+        </div>
+
+
+      </div>
+
+      <span id="instruction-text">
+        <ol>
+          <li>Die Linsen gründlich abspülen und abtropfen lassen.</li>
+          <br>
+          <li>In einem großen Topf das Olivenöl erhitzen. Zwiebel, Karotten, Sellerie und Knoblauch darin bei mittlerer Hitze anbraten, bis sie weich sind.</li>
+          <br>
+          <li>Die Linsen, gehackte Tomaten, Gemüsebrühe, Kreuzkümmel, Paprikapulver und Kurkuma hinzufügen.</li>
+        <br>
+          <li>Gut umrühren.</li>
+        <br>
+          <li>Die Suppe zum Kochen bringen und dann die Hitze reduzieren.</li>
+          <br>
+          <li>Die Suppe abgedeckt etwa 30-40 Minuten köcheln lassen, bis die Linsen weich sind und die Aromen sich gut verbunden haben. Gelegentlich umrühren. Mit Salz und Pfeffer abschmecken.</li>
+          <br>
+          <li>Wenn die Suppe zu dick ist, etwas mehr Gemüsebrühe hinzufügen. Die Linsensuppe in Schüsseln servieren und mit frischer Petersilie garnieren.</li>
+        </ol>
+      </span>
+
+
+      <div id="creator">
+        <h3>Rezept erstellt von</h3>
+        <div id="creator-profile">
+          <img id="creator-picture" src="./img/profile.png" alt="" />
+          <span id="creator-name">Jonas Lambelet</span>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <!-- Footer Anfang -->
+
+  <footer>
+    <img class="footerlogo" src="./img/logo_small.png" alt="logo">
+
+    <div class="footer-right">
+      <a class="footerlink" href="datenschutz.html">Datenschutz</a>
+      <a class="footerlink" href="impressum.html">Impressum</a>
+      <a class="copy">&copy 2023 Kochwelt-583 GmbH</a>
+    </div>
+    <div class="footerplaceholder">
+
+    </div>
+
+
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rezept des Tages - Lasagne</title>
+  <link rel="stylesheet" href="styleRecipe.css">
+  <link rel="shortcut icon" href="./img/logo_small.png" type="image/x-icon">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+    <script src="script.js"></script>
+</head>
+
+<body onload="createTableLasa()">
+
+
+
+
+  <header>
+    <img src="./img/logo.png" alt="logo">
+    <nav class="nav">
+      <a class="nav-links" href="./index.html">Start</a>
+        <a class="nav-links" href="./lasagnarecipe.html">Rezept des Tages</a>
+        <a class="nav-links" href="./contact.html">Kontakt</a>
+        <a class="nav-links" href="./impressum.html">Impressum</a>
+    </nav>
+    <nav class="nav-burger">
+      <img onclick="showMenuLinks()" src="./img/icons/icons8-menü-30.png" alt="Burgermenü">
+      <div id="nav-burger-links">
+          <a class="nav-links" href="./index.html">Start</a>
+          <a class="nav-links" href="./lasagnarecipe.html">Rezept des Tages</a>
+          <a class="nav-links" href="./contact.html">Kontakt</a>
+          <a class="nav-links" href="./impressum.html">Impressum</a>
+      </div>
+  </nav>
+
+
+  </header>
+
+  <!-- Header Ende  -->
+
+
+  <div id="Mainpage-content">
+
+
+    <section id="title-section">
+      <h1>Lasagne</h1>
+      <img id="title-image" src="./img/lasagna.jpg" alt="Lasagne" />
+      <article id="properties">
+
+        <div id="time-container">
+          <img class="property-icons" src="./img/icons/clock-regular.svg" alt="" />
+          <span id="total-time">60 Min.</span>
+        </div>
+
+        <div id="difficulty-container">
+          <img class="property-icons" src="./img/icons/brain-solid.svg" alt="" />
+          <span id="difficulty">medium</span>
+        </div>
+
+        <div id="posting-date-container">
+          <img class="property-icons" src="./img/icons/calendar-alt-regular.svg" alt="" />
+          <span id="posting-date"> 13.06.2023</span>
+        </div>
+      </article>
+    </section>
+
+
+    <section id="ingredients">
+      <article id="portion-calc">
+        <span>Zutaten für</span>
+        <input id="portion-input" type="number" placeholder="Anzahl" min="1" max="9" />
+        <a onclick="calcPortionLasa()" class="calc-button">Portionen</a>
+      </article>
+
+
+
+      <table id="table">
+      
+      </table>
+
+
+
+</section>
+    <section id="instruction-section">
+      <h2>Zubereitung</h2>
+      <div id="instruction-time-master-container">
+
+        <div class="instruction-time-container">
+          <img class="property-icons" src="./img/icons/clock-regular.svg" alt="Uhr-Icon" />
+          <span id="instruction-time">
+            <span>ca. 40 Minuten vorbereiten</span><br>
+            <span>ca. 20 Minuten backen</span>
+          </span>
+        </div>
+
+        <div class="instruction-time-container">
+          <img class="property-icons" src="./img/icons/clock-regular.svg" alt="Uhr-Icon" />
+          <span id="completion-time">Gesamtzeit ca. 60 Minuten</span>
+        </div>
+
+
+      </div>
+
+      <span id="instruction-text">
+        <ol>
+          <li>Möhre, Sellerie, Zwiebel und Knoblauch putzen und in Würfel schneiden. Das Öl erhitzen, die Gemüsewürfel darin gut anbraten und wieder aus der Pfanne nehmen.</li>
+          <br>
+          <li>Nun das Hackfleisch zur Hälfte zufügen und krümelig bzw. kross braten. Wieder aus der Pfanne nehmen und das restliche Hack braten. Das bereits gebratene Hack und Gemüse wieder zufügen, mit dem Wein ablöschen, aufkochen lassen und fast verkochen lassen. Tomatenmark dazugeben, etwas angehen lassen und mit der Brühe auffüllen. Mit Deckel sämig einkochen lassen. Mit Salz, Pfeffer und einer Prise Zucker würzen.</li>
+          <br>
+          <li>Für die Béchamel die Butter in einem Topf zerlasse.n.. Das Mehl einrühren und kurz anschwitzen, dann unter Rühren nach und nach die Milch zugießen. Mit Muskat und Salz abschmecken und einmal aufkochen lassen.</li>
+        <br>
+          <li>Eine Auflaufform fetten und mit Lasagneplatten belegen. Einige Löffel Béchamel darauf verteilen, mit etwas Parmesan bestreuen und etwas von der Bolognese darüber geben. So weiter schichten, bis alle Zutaten verbraucht sind. Die oberste Schicht sollte aus Béchamelsauce bestehen, die gleichmäßig mit Parmesan bestreut wird.</li>
+        <br>
+          <li>Im vorgeheizten Backofen bei 180 °C Ober-/Unterhitze ca. 20 Minuten überbacken. Bevor die Lasagne portioniert wird, einige Minuten ruhen lassen.</li>
+        </ol>
+      </span>
+
+
+      <div id="creator">
+        <h3>Rezept erstellt von</h3>
+        <div id="creator-profile">
+          <img id="creator-picture" src="./img/pw-profile.jpeg" alt="" />
+          <span id="creator-name">Pascal Woile</span>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <!-- Footer Anfang -->
+
+  <footer>
+    <img class="footerlogo" src="./img/logo_small.png" alt="logo">
+
+    <div class="footer-right">
+      <a class="footerlink" href="datenschutz.html">Datenschutz</a>
+      <a class="footerlink" href="impressum.html">Impressum</a>
+      <a class="copy">&copy 2023 Kochwelt-583 GmbH</a>
+    </div>
+    <div class="footerplaceholder">
+
+    </div>
+
+
+  </footer>
+</body>
+
+</html>
